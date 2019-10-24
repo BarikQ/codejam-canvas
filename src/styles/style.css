@@ -130,3 +130,7 @@ ul {
 .size-item.active {
   border-color: rebeccapurple;
 }
+
+.data-image {
+  display: none;
+}
