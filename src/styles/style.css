@@ -75,15 +75,15 @@ ul {
 }
 
 .blue .color-icon {
-  background: blue; 
+  background: blue;
 }
 
 .previous .color-icon {
-  background: green; 
+  background: green;
 }
 
 .current .color-icon {
-  background: rebeccapurple; 
+  background: rebeccapurple;
 }
 
 .previous::after,
@@ -105,10 +105,11 @@ ul {
 }
 
 .canvas {
-  width: 512px;
-  height: 512px;
+  max-height: 40px;
+  max-width: 40px;
   image-rendering: pixelated;
-  border: 1px solid black;
+  outline: double;
+  transform: scale(12.8);
 }
 
 .sizes-block {

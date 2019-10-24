@@ -33,13 +33,13 @@ function changeSize(elem, sizeItems, canvas, event) {
   canvas.height = newSize;
 
   switch (newSize) {
-    case 4:
+    case parseInt(document.querySelector('.small').id):
       reDraw(canvas, SMALL_URL);
       break;
-    case 32:
+    case parseInt(document.querySelector('.medium').id):
       reDraw(canvas, MEDIUM_URL);
       break;
-    case 512:
+    case parseInt(document.querySelector('.big').id):
       reDraw(canvas, BIG_URL);
       break;
     default:
@@ -83,7 +83,7 @@ function reDraw(canvas, url) {
               });
               ctx.fillStyle = rgbColor;
             }
-            ctx.fillRect(i, j, 1, 1);
+            ctx.fillRect(i * 10, j * 10, 10, 10);
           });
         });
       });
