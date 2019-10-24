@@ -39,7 +39,7 @@ function changeSize(elem, sizeItems, canvas, event) {
     case 32:
       reDraw(canvas, MEDIUM_URL);
       break;
-    case 256:
+    case 512:
       reDraw(canvas, BIG_URL);
       break;
     default:
@@ -62,7 +62,7 @@ function reDraw(canvas, url) {
       })
       .then(image => {
         image.onload = () => {
-          ctx.drawImage(image, 0, 0);
+          ctx.drawImage(image, 128, 128);
         }
       });
   } else {
