@@ -97,3 +97,36 @@ ul {
   left: 0;
   top: 50%;
 }
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 512px;
+  height: 512px;
+  image-rendering: pixelated;
+  border: 1px solid black;
+}
+
+.sizes-block {
+  height: 120px;
+}
+
+.size-item {
+  border: 1px solid lightgray;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.size-item:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease all;
+}
+
+.size-item.active {
+  border-color: rebeccapurple;
+}
