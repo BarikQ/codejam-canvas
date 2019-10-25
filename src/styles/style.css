@@ -105,11 +105,9 @@ ul {
 }
 
 .canvas {
-  max-height: 40px;
-  max-width: 40px;
-  image-rendering: pixelated;
   outline: double;
-  transform: scale(12.8);
+  height: 512px;
+  width: 512px;
 }
 
 .sizes-block {
