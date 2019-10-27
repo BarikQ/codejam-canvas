@@ -52,6 +52,8 @@ function reDraw(canvas, url, newSize) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   if (url === BIG_URL) {
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
     const IMAGE = new Image();
     fetch(url)
       .then(response => response.blob())
