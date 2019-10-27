@@ -74,14 +74,7 @@ function reDraw(canvas, url, newSize) {
             if (url === SMALL_URL) {
               ctx.fillStyle = `#${color}`;
             } else {
-              let rgbColor = `rgba(`;
-              color.forEach((rgb, index) => {
-                if (index !== 3) rgbColor += `${rgb},`;
-                else {
-                  rgbColor += `${rgb})`;
-                }
-              });
-              ctx.fillStyle = rgbColor;
+              ctx.fillStyle = `rgba(${data[i][j]})`;
             }
             ctx.fillRect(i * (CANVAS_SIZE / newSize), j * (CANVAS_SIZE / newSize), (CANVAS_SIZE / newSize), (CANVAS_SIZE / newSize));
           });
